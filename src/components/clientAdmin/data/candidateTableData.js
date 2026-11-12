@@ -1,0 +1,73 @@
+export const candidateTableData = [
+  {
+    id: 1,
+    candidateId: "TCS_001",
+    name: "Abinash Patri",
+    email: "abinash34@gmail.com",
+    phone: "+91 5334056789",
+    progress: 20,
+    status: "In Progress",
+    created_at: "2025-06-01T10:30:00Z",
+    assigned_hr: { name: "Puja Gupta", email: "puja@gmail.com" },
+  },
+
+  {
+    id: 2,
+    candidateId: "TCS_002",
+    name: "Niten Sharma",
+    email: "nitenkumar34@gmail.com",
+    phone: "+91 2634560789",
+    progress: 72,
+    status: "In Progress",
+    created_at: "2025-06-02T09:15:00Z",
+    assigned_hr: { name: "Rahul Mehta", email: "rahul.mehta@bgv.com" },
+  },
+
+  {
+    id: 3,
+    candidateId: "TCS_003",
+    name: "Nitin Kamro",
+    email: "niumar34@gmail.com",
+    phone: "+91 5634567089",
+    progress: 20,
+    status: "In Progress",
+    created_at: "2025-06-03T14:00:00Z",
+    assigned_hr: { name: "Sneha Iyer", email: "sneha.iyer@bgv.com" },
+  },
+
+  {
+    id: 4,
+    candidateId: "TCS_004",
+    name: "Nal Pathak",
+    email: "nalkumar34@gmail.com",
+    phone: "+91 9234056789",
+    progress: 100,
+    status: "Complete",
+    created_at: "2025-06-04T11:45:00Z",
+    assigned_hr: { name: "Sneha Iyer", email: "sneha.iyer@bgv.com" },
+  },
+
+  {
+    id: 5,
+    candidateId: "TCS_005",
+    name: "Nikhil Sharma",
+    email: "nikhil34@gmail.com",
+    phone: "+91 6234560789",
+    progress: 100,
+    status: "Verified",
+    created_at: "2025-06-05T08:30:00Z",
+    assigned_hr: { name: "Puja Gupta", email: "puja@gmail.com" },
+  },
+
+  {
+    id: 6,
+    candidateId: "TCS_006",
+    name: "Bibek Sudiyari",
+    email: "bibek34@gmail.com",
+    phone: "+91 8234875789",
+    progress: 43,
+    status: "In Progress",
+    created_at: "2025-06-06T16:20:00Z",
+    assigned_hr: { name: "Rahul Mehta", email: "rahul.mehta@bgv.com" },
+  },
+];

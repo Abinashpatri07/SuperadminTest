@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "build": {
+    "env": {
+      "VITE_API_URL": "https://api.dqnex.online"
+    }
+  },
+  "env": {
+    "VITE_API_URL": "https://api.dqnex.online"
+  }
+}
