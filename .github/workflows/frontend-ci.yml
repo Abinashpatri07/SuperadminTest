@@ -33,3 +33,4 @@ jobs:
       run: npm run build
       env:
         VITE_API_URL: ${{ secrets.VITE_API_URL || 'https://api.dqnex.online' }}
+
