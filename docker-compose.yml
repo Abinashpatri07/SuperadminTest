@@ -1,0 +1,17 @@
+services:
+  # ─────────────────────────────────────────────
+  # Frontend Service (React + Vite served via Nginx)
+  # ─────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-https://api.dqnex.online}
+    container_name: bgv_frontend
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+    env_file:
+      - path: .env
+        required: false
