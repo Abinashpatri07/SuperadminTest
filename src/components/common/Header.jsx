@@ -332,6 +332,14 @@ export default function Header() {
         avatar: storedUser.avatar || null,
         phone: storedUser.phone || storedUser.mobile || storedUser.candidate_mobile || storedUser.poc_mobile || ""
       });
+    } else {
+      setUser({
+        name: "Super Admin",
+        email: "superadmin@bgv.com",
+        role: "Super Admin",
+        avatar: null,
+        phone: "+91 9876543210"
+      });
     }
   };
 

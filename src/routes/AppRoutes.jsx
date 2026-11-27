@@ -9,9 +9,10 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Landing / Direct Login */}
-        <Route path="/" element={<Navigate to="/super-admin/login" replace />} />
-        <Route path="/login" element={<Navigate to="/super-admin/login" replace />} />
+        {/* Landing / Direct Dashboard */}
+        <Route path="/" element={<Navigate to="/super-admin/home" replace />} />
+        <Route path="/login" element={<Navigate to="/super-admin/home" replace />} />
+        <Route path="/portal-login" element={<Navigate to="/super-admin/home" replace />} />
 
         {/* Super Admin Password Setup & Reset Routes */}
         <Route path="/reset-password" element={<ResetPassword />} />
@@ -23,7 +24,7 @@ function AppRoutes() {
         <Route path="/super-admin/*" element={<SuperAdminRoutes />} />
 
         {/* Fallback */}
-        <Route path="*" element={<Navigate to="/super-admin/login" replace />} />
+        <Route path="*" element={<Navigate to="/super-admin/home" replace />} />
       </Routes>
     </BrowserRouter>
   );

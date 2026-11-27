@@ -76,6 +76,7 @@ function SuperAdminRoutes() {
         }
       >
         {/* HOME */}
+        <Route index element={<Navigate to="home" replace />} />
         <Route path="home" element={<Home />} />
 
         {/* ANALYTICS */}

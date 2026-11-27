@@ -44,10 +44,9 @@ axiosInstance.interceptors.response.use(
       const isAuthRequest = url.includes("/auth/login") || url.includes("/unified-login") || url.includes("/verify-otp");
       const isLoginPage = window.location.pathname === "/" || window.location.pathname === "/portal-login" || window.location.pathname.endsWith("/login");
 
-      // Don't auto-redirect/reload during login attempt, let the login form show the error message!
+      // Don't auto-redirect/reload during login attempt or in direct test mode
       if (!isAuthRequest && !isLoginPage) {
-        clearAllAuthSessions();
-        window.location.href = "/portal-login?logout=true";
+        console.warn("401 Unauthorized for:", url);
       }
     }
     return Promise.reject(error);
